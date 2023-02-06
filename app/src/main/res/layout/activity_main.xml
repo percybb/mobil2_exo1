@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRw"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="RW" />
+
+            <TextView
+                android:id="@+id/lblMois"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Mois"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnFw"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="FW" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/txtTmMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TmMin"
+                android:inputType="numberSigned"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/txtTmMax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TmMin"
+                android:inputType="numberSigned"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/txtPmTot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="PmTot"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:onClick="addVal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btnPta"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="PTA"
+                />
+
+            <TextView
+                android:id="@+id/lblPta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="n/a" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPtma"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="PTMA" />
+
+            <TextView
+                android:id="@+id/lblPtma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="n/a" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTmin"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="TMIN" />
+
+            <TextView
+                android:id="@+id/lblTmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="n/a" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTmax"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="TMAX" />
+
+            <TextView
+                android:id="@+id/lblTmax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="n/a" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.widget.RelativeLayout>
